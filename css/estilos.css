@@ -1,0 +1,429 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Boston Traffic";
+  src: url("../assets/fonts/boston_traffic.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 14px;
+  color: white;
+  margin: 10px auto;
+}
+
+.header {
+  border-bottom: 3px ridge #3d2500;
+  margin: 10px auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  position: relative;
+}
+.header .logo {
+  width: 60px;
+}
+.header nav {
+  display: flex;
+  font-weight: bold;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.header nav .nav {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-left: 20px;
+  text-align: center;
+}
+.header nav .nav li a {
+  text-decoration: none;
+  color: #3d2500;
+}
+.header nav .nav li a:hover {
+  background: #a6a6a6;
+  transition: 0.5s;
+  width: 100px;
+  color: #3d2500;
+}
+.header .subrayado {
+  text-decoration: #a6a6a6 3px underline;
+}
+
+.footer {
+  border-top: 3px ridge #3d2500;
+  margin: 10px auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.footer .footerMenu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer .footerMenu .logo {
+  position: relative;
+  left: 0px;
+  width: 60px;
+}
+.footer .nav {
+  display: flex;
+  font-weight: bold;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.footer .nav li a {
+  text-decoration: none;
+  color: #3d2500;
+}
+.footer .footerRedes a {
+  color: #3d2500;
+  font-size: 24px;
+  margin: 0 10px auto;
+  border-top: #3d2500;
+}
+.footer .footerRedes a:hover {
+  color: #a6a6a6;
+  transform: scale(1.2);
+}
+
+.tituloPagina {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a3222;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+.tituloPagina::before {
+  content: "☕";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #a67c52;
+}
+.tituloPagina .main-content-Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6e2e2;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+.tituloPagina .main-content-Intro .intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.tituloPagina .main-content-Intro .intro-container .imgIntro {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.tituloPagina .main-content-Intro .intro-container .textoIntro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #4a3222;
+  max-width: 700px;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .tituloPagina .main-content-Intro .intro-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloPagina .main-content-Intro .intro-container .imgIntro, .tituloPagina .main-content-Intro .intro-container .textoIntro {
+    flex: 1;
+  }
+  .tituloPagina .main-content-Intro .intro-container .textoIntro {
+    text-align: left;
+  }
+}
+.tituloPagina .main-content-Sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6e2e2;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #6e4b2a;
+}
+.tituloPagina .main-content-Sobrenosotros .textoSobrenosotros {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #4a3222;
+}
+.tituloPagina .main-content-Sobrenosotros .imgSobrenosotros {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0 auto;
+}
+.tituloPagina .main-content-Sobrenosotros .textoSobrenosotrosPie {
+  font-size: 1.5rem;
+  margin: 25px;
+  color: #4a3222;
+}
+.tituloPagina .block-intro-Galeria {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-style: italic;
+  color: white;
+  background-color: #e6e2e2;
+}
+.tituloPagina .block-intro-Galeria h1 {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0 auto;
+  font-style: italic;
+}
+.tituloPagina .imagen {
+  width: 100%;
+}
+.tituloPagina .imagen img {
+  width: 100%;
+}
+.tituloPagina .container-Galeria {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 100px) {
+  .tituloPagina .container-Galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 520px) {
+  .tituloPagina .container-Galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 728px) {
+  .tituloPagina .container-Galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .tituloPagina .container-Galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.tituloPagina .intro-Galeria {
+  color: #3d2500;
+}
+.tituloPagina .block-intro {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+.tituloPagina .container-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 40px;
+}
+.tituloPagina .video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  overflow: hidden;
+}
+.tituloPagina .video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 315px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.tituloPagina .intro-menu {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.tituloPagina .itemsMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #3d2500;
+  border-radius: 50%;
+}
+.tituloPagina .itemsMenu .imgMenu {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.tituloPagina .itemsMenu .pMenu {
+  font-size: 18px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  text-align: center;
+}
+.tituloPagina .block-intro-Contacto p {
+  font-size: 16px;
+  color: #3d2500;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ffffff;
+}
+.tituloPagina .main-content-Contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: #a6a6a6;
+}
+.tituloPagina form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #beb29e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #3d2500;
+}
+.tituloPagina form fieldset {
+  border: 2px solid #a6a6a6;
+  border-radius: 8px;
+  padding: 20px;
+}
+.tituloPagina form legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #3d2500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.tituloPagina form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.tituloPagina form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3d2500;
+}
+.tituloPagina form input[type=text],
+.tituloPagina form input[type=email],
+.tituloPagina form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+  color: #3d2500;
+  transition: 0.3s;
+}
+.tituloPagina form input[type=text]:focus,
+.tituloPagina form input[type=email]:focus,
+.tituloPagina form textarea:focus {
+  border: 2px solid #a6a6a6;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 8px rgba(166, 124, 82, 0.5);
+}
+.tituloPagina form textarea {
+  resize: none;
+  min-height: 120px;
+}
+.tituloPagina form input[type=submit] {
+  background-color: #a6a6a6;
+  color: #3d2500;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tituloPagina form input[type=submit]:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .tituloPagina form {
+    padding: 15px;
+  }
+  .tituloPagina form legend {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloPagina form {
+    padding: 10px;
+  }
+  .tituloPagina form input[type=submit] {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
