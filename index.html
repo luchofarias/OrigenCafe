@@ -9,8 +9,8 @@
     <!-- conector con bootsrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- conector con CSS -->
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
     <!-- Script Iconos -->
     <script src="https://kit.fontawesome.com/e6da5c2209.js" crossorigin="anonymous"></script>
 </head>
@@ -23,8 +23,12 @@
 <!-- Se usa para identificar contenido que nos sirva de introducción a un bloque de código de nuestro HTML -->
 <!-- En este caso va a ser el Menu principal -->
     <header class="header">
-        <div>
+        <div class="logoContainer">
             <img class="logo" src="./assets/img/logo_Origen.png" alt="logo Origen Café">
+            <div class="logoText">
+                <h3>Origen</h3>
+                <p>CAFÉ ARTESANAL</p>
+            </div>
         </div>
         <nav>
             <ul class="nav">
@@ -40,43 +44,90 @@
 
 <!-- Contenido principal de la página en la que estamos. Sólo puede ser usado una vez por cada página. -->
     <main class="main-content-Intro">
-        <h1 class="tituloPagina">Origen Café</h1>
+        <h1 class="tituloPagina">Bienvenidos a Origen Café</h1>
         <div class="intro-container">
             <img class="imgIntro" src="./assets/img/cafe_Img_H1.jpg" alt="Café de especialidad en Origen Café">
             <p class="textoIntro">
                 Más que un café, somos un lugar de encuentro.<br>
                 En <strong>Origen Café</strong> celebramos el ritual de cada taza: granos seleccionados, aromas que despiertan recuerdos y momentos que inspiran.<br>
                 Nuestra pasión es ofrecerte un espacio donde el sabor y la calidez se conviertan en parte de tu día.
+            </p>   
         </div>
+        <div class="footerMain">
+            <h2>¿Por qué elegir Origen?</h2>
+            <p>Nos dedicamos a ofrecerte la mejor experiencia en cafeteria con ingredientes de la más alta calidad</p>
+        </div>
+
+        <div class="containerCardsIntro">
+            <div class="cardIntro">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <h3>Calidad Premium</h3>
+                <p>Granos seleccionados de las mejores fincas, tostados artesanalmente para garantizar el sabor perfecto.</p>
+            </div>
+            <div class="cardIntro">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <h3>Experiencia Única</h3>
+                <p>Ambiente acogedor y servicio personalizado que hace de cada visita un momento especial.</p>
+            </div>
+            <div class="cardIntro">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <h3>Comunidad</h3>
+                <p>Un lugar donde nacen historias.</p>
+            </div>
     </main>
 
 
 <!-- Lo utilizamos para indicar información menos importante sobre la sección en la que estemos, contenido relacionado, datos de la web, etc. -->
-    <footer class="footer">
-<!-- Menu en footer -->
-        <div class="footerMenu">        
-            <div>
+<footer class="footer">
+    <div class="containerFooter">
+        <!-- Columna 1: Logo + descripción -->
+        <div class="sectionFooter section1">
+            <div class="logoContainer">
                 <img class="logo" src="./assets/img/logo_Origen.png" alt="logo Origen Café">
+                <div class="logoText">
+                    <h3>Origen</h3>
+                    <p>CAFÉ ARTESANAL</p>
+                </div>
             </div>
-            <nav>
-                <ul class="nav">
-                    <li><a class="subrayado" target="_self" href="./index.html">Inicio</a></li>
-                    <li><a target="_self" href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a target="_self" href="./pages/galeria.html">Galeria</a></li>
-                    <li><a target="_self" href="./pages/menu.html">Menu</a></li>
-                    <li><a target="_self" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <p class="desc">Tres generaciones dedicadas a ofrecerte el mejor café del mundo.</p>
         </div>
-<!-- Links de redes sociales -->
-        <div class="footerRedes"> 
-            <a href="https://www.facebook.com/origen.cafe//" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/origen.cafe/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/origen.cafe" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/origen.cafe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="sectionFooter section2">
+            <h4>Enlaces Rápidos</h4>
+            <ul class="nav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobreNosotros.html">Nosotros</a></li>
+                <li><a href="./pages/menu.html">Menú</a></li>
+                <li><a href="./pages/galeria.html">Galería</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
         </div>
-        <h6 class="copy">&copy; Origen Cafe</h6>
-    </footer>
+
+        <!-- Columna 3: Contacto -->
+        <div class="sectionFooter section3">
+            <h4>Contacto</h4>
+            <p>Calle Origen Cafe Nº 000</p>
+            <p>Rosario, Santa Fe</p>
+            <p>341-xxxxxxx</p>
+            <p>origencafe@gmail.com</p>
+        </div>
+
+        <!-- Columna 4: Redes sociales -->
+        <div class="sectionFooter section4">
+            <h4>Síguenos</h4>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerBottom">
+        <p>&copy; 2024 Origen Café. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 <!-- enlace de javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

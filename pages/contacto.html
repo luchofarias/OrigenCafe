@@ -16,8 +16,12 @@
 <!-- Se usa para identificar contenido que nos sirva de introducción a un bloque de código de nuestro HTML -->
 <!-- En este caso va a ser el Menu principal -->
     <header class="header">
-        <div>
+        <div class="logoContainer">
             <img class="logo" src="../assets/img/logo_Origen.png" alt="logo Origen Café">
+            <div class="logoText">
+                <h3>Origen</h3>
+                <p>CAFÉ ARTESANAL</p>
+            </div>
         </div>
         <nav>
             <ul class="nav">
@@ -66,29 +70,56 @@
 
 <!-- Lo utilizamos para indicar información menos importante sobre la sección en la que estemos, contenido relacionado, datos de la web, etc. -->
     <footer class="footer">
-<!-- Menu en footer -->
-        <div class="footerMenu">        
-            <div>
-                <img class="logo" src="../assets/img/logo_Origen.png" alt="logo Origen Café">
+        <div class="containerFooter">
+            <!-- Columna 1-->
+            <div class="sectionFooter section1">
+                <div class="logoContainer">
+                    <img class="logo" src="../assets/img/logo_Origen.png" alt="logo Origen Café">
+                    <div class="logoText">
+                        <h3>Origen</h3>
+                        <p>CAFÉ ARTESANAL</p>
+                    </div>
+                </div>
+                <p class="desc">Tres generaciones dedicadas a ofrecerte el mejor café del mundo.</p>
             </div>
-            <nav>
+
+            <!-- Columna 2-->
+            <div class="sectionFooter section2">
+                <h4>Enlaces Rápidos</h4>
                 <ul class="nav">
-                    <li><a target="_self" href="../index.html">Inicio</a></li>
-                    <li><a target="_self" href="./sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a class="subrayado" target="_self" href="./galeria.html">Galeria</a></li>
-                    <li><a target="_self" href="./menu.html">Menu</a></li>
-                    <li><a target="_self" href="./contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="subrayado" href="./galeria.html">Galería</a></li>
+                    <li><a href="./menu.html">Menú</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
+            </div>
+
+            <!-- Columna 3-->
+            <div class="sectionFooter section3">
+                <h4>Contacto</h4>
+                <p>Calle Origen Cafe Nº 000</p>
+                <p>Rosario, Santa Fe</p>
+                <p>341-xxxxxxx</p>
+                <p>origencafe@gmail.com</p>
+            </div>
+
+            <!-- Columna 4-->
+            <div class="sectionFooter section4">
+                <h4>Síguenos</h4>
+                <div class="socials">
+                    <a href="https://www.facebook.com/origen.cafe//" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/origen.cafe/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/origen.cafe" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/origen.cafe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-<!-- Links de redes sociales -->
-        <div class="footerRedes"> 
-            <a href="https://www.facebook.com/origen.cafe//" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/origen.cafe/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/origen.cafe" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/origen.cafe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+        <!-- Footer inferior -->
+        <div class="footerBottom">
+            <p>&copy; 2024 Origen Café. Todos los derechos reservados.</p>
         </div>
-        <h6 class="copy">&copy; Origen Cafe</h6>
     </footer>
 <!-- enlace de javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
