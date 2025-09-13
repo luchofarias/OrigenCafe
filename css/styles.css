@@ -408,18 +408,24 @@ nav {
 /* Galeria */
 
 .block-intro-Galeria {
+    margin: 0 auto;
     height: 200px;
-    width: 100%;
+    max-width: 1200px;
     display: flex;
-    position: relative;
-    overflow: hidden;
-    text-align: left;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
     font-style: italic;
-    color: white;
+
     background-color:#e6e2e2;
+
+    text-align: left;
+    padding: 40px 20px;
+    background-color: #e6e2e2;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
 }
 
 .block-intro-Galeria h1 {
